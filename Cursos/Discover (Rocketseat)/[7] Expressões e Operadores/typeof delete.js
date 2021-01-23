@@ -5,7 +5,7 @@
 */
 
 //typeof - mostra o tipo de dado de um elemento
-console.log(true);
+console.log(typeof(true));
 
 //delete - deleta propriedade de um objeto
 const person = {
