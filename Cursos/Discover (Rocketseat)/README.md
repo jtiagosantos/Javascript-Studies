@@ -1,3 +1,4 @@
 # About
 
-<img src="./discover-img.png">
+<center><img src="./discover-img.png"></center>
+
