@@ -1,4 +1,6 @@
 # About
 
-<center><img src="./discover-img.png"></center>
+<p align="center">
+  <img src="./discover-img.png">
+</p>
 
