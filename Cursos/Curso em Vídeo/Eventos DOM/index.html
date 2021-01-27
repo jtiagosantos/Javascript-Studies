@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos DOM</title>
+        <style>
+            #area {
+                font: normal 20pt Arial;
+                background: rgb(44, 223, 44);
+                color: #fff;
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="area">
+            Interaja...
+        </div>
+
+        <script>
+            //Eventos
+            //mouseenter - quando o mouse entra no elemento;
+            //mousemove - quando o mouse é movido dentro do elemento;
+            //mousedown - quando clica e segura dentro do elemento;
+            //mouseup - quando clica, segura e então solta dentro do elemento;
+            //click - clique inteiro dentro do elemento;
+            //dblclick - duplo clique dentro do elemento;
+            //mouseout - quando o mouse sai de dentro do elemento;
+            divElement = document.querySelector('#area');
+
+            divElement.addEventListener('click', event => {
+                divElement.innerHTML = "CLICOU!";
+                divElement.style.backgroundColor = "red";
+            });
+
+            divElement.addEventListener('dblclick', event => {
+                divElement.innerHTML = "CLIQUE DUPLO";
+                divElement.style.backgroundColor = "pink";
+            })
+
+            divElement.addEventListener('mouseenter', event => {
+                divElement.innerHTML = "ENTROU!";
+                divElement.style.backgroundColor = "blue";
+            });
+
+            divElement.addEventListener('mouseout', event => {
+                divElement.innerHTML = "SAIU!";
+                divElement.style.backgroundColor = "rgb(44, 223, 44)";
+            })
+        </script>
+    </body>
+</html>
